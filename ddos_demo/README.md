@@ -48,6 +48,7 @@ usage: defense_cli.py [-h] [-i INTERFACE] -m {traffic,access,all}
 --report 生成防御报告
 
 ## 目录结构及核心实现
+```
 ddos_demo/
 ├── attack/ # 攻击模块
 │ ├── network/ # 网络层攻击
@@ -66,7 +67,7 @@ ddos_demo/
 │ └── report.py # 报告生成
 ├── attack_cli.py # 攻击命令行入口
 └── defense_cli.py # 防御命令行入口
-
+```
 ## 核心实现逻辑
 
 ### 1. 攻击模块核心实现
