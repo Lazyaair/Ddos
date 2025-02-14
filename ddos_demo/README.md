@@ -23,7 +23,7 @@
 ## 使用参数说明
 
 ### 攻击命令 (attack_cli.py)
-bash
+```bash
 usage: attack_cli.py [-h] -t TARGET [-p PORT] -m {syn,icmp,http,dns}
 [--threads THREADS] [--duration DURATION]
 [--http-method {GET,POST}]
@@ -34,10 +34,9 @@ usage: attack_cli.py [-h] -t TARGET [-p PORT] -m {syn,icmp,http,dns}
 --threads 攻击线程数 (默认: 4)
 --duration 持续时间(秒) (默认: 10)
 --http-method HTTP方法 (默认: GET)
-
+```
 ### 防御命令 (defense_cli.py)
-
-bash
+```bash
 usage: defense_cli.py [-h] [-i INTERFACE] -m {traffic,access,all}
 [--threshold THRESHOLD] [--window WINDOW] [--report]
 参数说明：
@@ -46,7 +45,7 @@ usage: defense_cli.py [-h] [-i INTERFACE] -m {traffic,access,all}
 --threshold 流量阈值(包/秒) (默认: 1000)
 --window 统计窗口(秒) (默认: 60)
 --report 生成防御报告
-
+```
 ## 目录结构及核心实现
 ```
 ddos_demo/
